@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+@font-face {
+    font-family: tesla;
+    src: url(./tesla/TESLA.ttf);
+}
+
+
+* {
+    box-sizing: border-box;
+    font-family: tesla, 'Poppins', sans-serif;
+}
+
+body {
+    margin: 0;
+    color: hsl(220, 16%, 11%);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    backdrop-filter: blur(10px);
+}
+
+nav {
+    padding-inline: 2rem;
+}
+
+nav, ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    gap: 1rem;
+    font-weight: 500;
+}
+
+nav li {
+    padding: .5rem;
+}
+
+nav li:hover {
+    background-color: hsla(220, 16%, 11%, 0.1);
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: hsl(220, 16%, 11%);
+
+}
+
+h2 {
+    letter-spacing: 10px;
+}
+
+section{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding-block: 5rem;
+}
+
+.m3 {
+    background-image: url(./images/model3.jpeg);
+}
+
+.ms {
+    background-image: url(./images/models.jpeg);
+}
+
+.my {
+    background-image: url(./images/modelY.jpeg);
+}
+
+.mx {
+    background-image: url(./images/modelX.jpeg);
+}
+
+.solarPanels {
+    background-image: url(./images/panel.jpeg);
+}
+
+.solarRoof{
+    background-image: url(./images/roof.webp);
+}
+
+.accessories{
+    background-image: url(./images/acc.jpeg);
+}
+
+section h1 {
+    font-size: 45px;
+}
+
+.m3 h1, .solarRoof h1, .solarPanels h1{
+    margin-bottom: 0;
+}
+
+.m3 p, .solarRoof p, .solarPanels p {
+    margin-top: 0;
+}
+
+.demoButton, .orderButton {
+    padding: 10px 40px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    opacity: .8;
+}
+
+.demoButton {
+    color: hsl(218, 7%, 24%);
+    
+}
+.orderButton {
+    background-color: hsl(218, 7%, 24%);
+    color: white;
+    margin-right: 2rem;
+}
+
+footer {
+    padding-bottom: 4rem;
+}
+
+footer ul {
+    justify-content: center;
+    gap: 1rem;
+    font-size: 14px;
+    font-weight: 500;
+    color:  hsl(218, 7%, 54%);;
+}
