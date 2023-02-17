@@ -1,22 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Q4</title>
 </head>
+
 <body>
     <label for="mark">Enter your mark : </label>
     <input type="number" name="mark" id="mark">
     <button onclick="showresult()">Result</button>
+    <p id="result"></p>
     <script>
         let mark = document.getElementById("mark")
+
         function showresult() {
-            mark.value = Number(mark.value)
-            mark.value >= 50 ? alert("Passed") : alert("Failed")
-            mark.value = ""
+            try {
+                if (mark.value > 100) throw "Invalid mark"
+                mark.value >= 50 ? alert("Passed") : alert("Failed")
+            } catch (err) {
+                alert(err)
+            } finally {
+                mark.value = ""
+            }
         }
     </script>
 </body>
+
 </html>

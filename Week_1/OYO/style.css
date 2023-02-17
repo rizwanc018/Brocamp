@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+html,body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    width: 100vw;
+}
+
+::placeholder {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+h1,p,ul {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: hsl(0, 0%, 13%);
+}
+
+ul {
+    list-style-type: none;
+}
+
+header, .header-menu, .header-card, .login {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+}
+
+header {
+    justify-content: space-between;
+    font-size: 14px;
+    padding-inline: 2rem;
+}
+
+.logo {
+    width: 5rem;
+}
+
+.login-icon {
+    width: 2rem
+}
+
+.header-card:nth-child(2) {
+    padding: 1rem 2rem;
+    border-left: 1px solid hsla(0, 22%, 7%, 0.3);
+    border-right: 1px solid hsla(0, 22%, 7%, 0.3);
+
+}
+
+.cities {
+    background-color: hsl(210, 20%, 96%);
+    font-size: 14px;
+}
+
+.cities ul {
+    display: flex;
+    justify-content: space-around;
+    padding: .5rem .1rem;
+}
+
+.cities a {
+    padding: .5rem .1rem;
+}
+
+.cities a:hover {
+    background-color: white;
+}
+
+.search-section {
+    position: relative;
+    padding: 2.5rem 0;
+    background-image: linear-gradient(to right, rgb(227,0,55), rgb(217,0,16)) ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    isolation: isolate;
+}
+
+.search-section h1 {
+    margin-bottom: 1rem;
+    font-size: 38px;
+    color: white;
+    font-weight: 800;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr .7fr;
+}
+
+form input {
+    padding: 1.3rem .5rem;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-weight: 600;
+    border: 0;
+    border-left: 1px solid hsla(0, 22%, 7%, 0.3);
+}
+
+form input[type="submit"] {
+    border: 0;
+    background-color: hsl(140, 75%, 41%);
+    color: white;
+}
+
+.search-sec-svg1, .search-sec-svg2 {
+    position: absolute;
+    top: 16%;
+    left: 10%;
+    z-index: -1;
+}
+
+.search-sec-svg2 {
+    left: 55%;
+}
+
+.img-sec {
+    width: 90%;
+    margin: auto;
+    /* padding-inline: 5rem; */
+}
+
+.img-sec img {
+    width: 100%;
+    padding-block: 4rem;
+    /* margin: auto; */
+}
+
+.newsletter-sec {
+    border: 2px solid hsla(0, 0%, 0%, 0.1);
+    padding: 2rem;
+    margin: auto;
+    width: 90%;
+    font-size: 20px;
+    /* font-weight: 700; */
+}
+
+.newsletter-sec, .newsletter-sec-divs{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.newsletter-sec-divs-email {
+    flex: 1;
+    margin-left: 30%;
+}
+
+.newsletter-sec-divs input[type="email"] {
+    padding: 1.3rem .5rem;
+    box-sizing: border-box;
+    /* font-size: 15px; */
+    font-weight: 600;
+    width: 150%;
+    border: 1px solid hsla(0, 22%, 7%, 0.3);
+    border-radius: 5px;
+    border: 2px solid hsla(0, 1%, 46%, 0.367);
+}
+
+.newsletter-sec-divs input[type="submit"] {
+    padding: 1rem 2.5rem;
+    border-radius: 5px;
+    background-color: hsl(0, 100%, 48%);
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.email-label {
+    font-size: 12px;
+    position: absolute;
+}
+
+.newsletter-sec-divs span, .newsletter-sec-divs p {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.loc-container {
+    display: flex;
+}
+.locs, .loc-dets {
+    flex: 1;
+    /* border: 2px solid red; */
+}
+
+.locs {
+    background-image: url(/images/bckg.png);
+}
+
+.loc-dets {
+    padding: 4rem 2rem 0 2rem;
+}
+
+.counts {
+    display: flex;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.hotels-homes-count {
+    padding-left: 2rem;
+    border-left: 1px solid rgba(0, 0, 0, 0.4);
+}

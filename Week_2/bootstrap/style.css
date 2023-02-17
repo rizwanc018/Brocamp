@@ -1,0 +1,13 @@
+.tst {
+    border: 2px solid red;
+}
+
+.col-1, .col-sm-4, .col-md-4 {
+    border: 2px solid black;
+    background-color: aqua;
+}
+
+.col-1 {
+    height: 5rem;
+    width: 5rem;
+}
